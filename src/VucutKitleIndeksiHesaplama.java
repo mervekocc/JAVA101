@@ -5,7 +5,7 @@ public class VucutKitleIndeksiHesaplama {
         double meter,kg,index;
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Lütfen boyunuzu Giriniz :");
+        System.out.print("Lütfen Boyunuzu (metre cinsinde) Giriniz :");
         meter=input.nextDouble();
         System.out.print("Lütfen Kilonuzu Giriniz :");
         kg = input.nextDouble();
