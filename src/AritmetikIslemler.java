@@ -14,9 +14,8 @@ public class AritmetikIslemler {
         System.out.print("3. Sayıyı Giriniz : ");
         c=input.nextInt();
 
-        //işlemleri yaptır
+        //işlemleri yaptır, sonucu ekrana yazdır
         islem=a+b*c-b;
-        //sonucu ekrana yazdır
         System.out.println("İşlem Sonucunuz: "+ islem  );
     }
 }
