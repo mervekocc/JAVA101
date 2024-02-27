@@ -8,10 +8,12 @@ public class UstHesabi {
         Scanner scanner=new Scanner(System.in);
         // kullanıcıdan veriler alınır
         System.out.print("Taban değeri giriniz :");
-        sayi= scanner.nextInt();
+         sayi= scanner.nextInt();
+
         System.out.print("Üs değerini giriniz :");
-        us= scanner.nextInt();
-        toplam=sayi;
+         us= scanner.nextInt();
+         toplam=sayi;
+
         // verilere göre işlem yapılır ve çıktı verilir
         for (int i = 1; i <us ; i++) {
             toplam =toplam*sayi;
