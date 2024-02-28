@@ -19,6 +19,9 @@ public class AsalSayiBulma
 
     public static void main(String[] args)
     {
+        //Bir Scanner nesnesi oluşturularak kullanıcıdan giriş alınır.
+        //Kullanıcıya bir mesaj gösterilerek bir sayı girmesi istenir.
+        //Kullanıcının girdiği sayı number değişkenine atanır.
         Scanner input = new Scanner(System.in);
          System.out.print("Sayı giriniz:");
           int number = input.nextInt();
@@ -26,6 +29,7 @@ public class AsalSayiBulma
 
         if (asal(number, i) == 1)
         {
+         // Ekrana sonuç yazdırılır.
             System.out.print(number + " Sayısı asaldır !");
         }
         else
