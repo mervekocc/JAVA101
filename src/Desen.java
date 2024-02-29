@@ -13,9 +13,6 @@ public class Desen {
         System.out.print(" " + sayı);
     }
 
-
-
-
     public static void main(String[] args) {
         System.out.print("Bir sayı giriniz : ");
         Scanner scan = new Scanner(System.in);
