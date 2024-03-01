@@ -5,7 +5,7 @@ public class Matris {
         int[][] matris = {{2, 3, 4}, {5, 6, 4}};
 
         System.out.println("Matris : ");
-
+  
         for (int i = 0; i < matris.length; i++) {
             for (int j = 0; j <= matris.length; j++) {
                 System.out.print(matris[i][j]);
