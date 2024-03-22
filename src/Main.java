@@ -1,15 +1,41 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Set<book> ts = new TreeSet<>();
+        //5 tane nesne oluşturun ve nesneleri Set tipinde bir yapısında saklayınız.
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        ts.add(new book("Şi'r-i Kadim","2016",153,"İskender Pala"));
+        ts.add(new book("Kabus / Schrödinger'in Kedisi 1","2016",708,"Alev Alatlı"));
+        ts.add(new book("Yalnızız","2016",416,"Peyami Sefa"));
+        ts.add(new book("Tehlikeli Oyunlar","2022",479,"Oğuz Atay"));
+        ts.add(new book("Amat","2023",239,"İhsan Oktay Anar"));
+
+
+        System.out.println(" A'dan Z'ye Kitap Listesi ");
+        System.out.println("**********************************");
+        for (book book : ts) {
+            System.out.println(book.getAuthorName()+" - "+book.getName() + " , " + book.getPageNumber());
         }
+        System.out.println(" ");
+
+
+        System.out.println("Sayfa Sayısına Göre Kitap Listesi ");
+        System.out.println("***********************************");
+
+        Set<book> newTreeSet = new TreeSet<>(new Comparator<book>() {
+            @Override
+            public int compare(book o1, book o2) {
+                return o1.getPageNumber()- o2.getPageNumber();
+            }
+        });
+        newTreeSet.addAll(ts);
+        for (book book : newTreeSet) {
+            System.out.println(book.getName() + ", " + book.getPageNumber());
+        }
+
+
+
+
     }
 }
